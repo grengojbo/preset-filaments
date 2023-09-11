@@ -1,0 +1,53 @@
+{
+   "close_fan_the_first_x_layers" : "1",
+   "compatible_printers" : "",
+   "compatible_printers_condition" : "",
+   "compatible_prints" : "",
+   "compatible_prints_condition" : "",
+   "cool_plate_temp" : "60",
+   "cool_plate_temp_initial_layer" : "60",
+   "default_filament_colour" : "#FF8000",
+   "eng_plate_temp" : "60",
+   "eng_plate_temp_initial_layer" : "60",
+   "fan_cooling_layer_time" : "100",
+   "fan_max_speed" : "100",
+   "fan_min_speed" : "100",
+   "filament_cost" : "0",
+   "filament_density" : "1.22",
+   "filament_diameter" : "1.75",
+   "filament_end_gcode" : [
+      "; Filament-specific end gcode"
+   ],
+   "filament_flow_ratio" : "1",
+   "filament_max_volumetric_speed" : "15",
+   "filament_minimal_purge_on_wipe_tower" : "15",
+   "filament_notes" : [
+      ""
+   ],
+   "filament_settings_id" : "Spectrum PLA PRO @Bbox",
+   "filament_soluble" : "0",
+   "filament_start_gcode" : [
+      ";M900 K{if nozzle_diameter[0]==0.4}0.05{elsif nozzle_diameter[0]==0.25}0.14{elsif nozzle_diameter[0]==0.3}0.07{elsif nozzle_diameter[0]==0.35}0.06{elsif nozzle_diameter[0]==0.6}0.03{elsif nozzle_diameter[0]==0.5}0.035{elsif nozzle_diameter[0]==0.8}0.015{else}0{endif} ; Filament gcode\n\n;{if printer_notes=~/.*PRINTER_MODEL_MK4IS.*/}\n;M572 S{if nozzle_diameter[0]==0.4}0.038{elsif nozzle_diameter[0]==0.5}0.025{elsif nozzle_diameter[0]==0.6}0.02{elsif nozzle_diameter[0]==0.8}0.014{elsif nozzle_diameter[0]==0.25}0.12{elsif nozzle_diameter[0]==0.3}0.08{else}0{endif} ; Filament gcode\n;{endif}\n\n;M142 S36 ; set heatbreak target temp"
+   ],
+   "filament_type" : "PLA",
+   "filament_vendor" : "Spectrum",
+   "from" : "User",
+   "full_fan_speed_layer" : "3",
+   "hot_plate_temp" : "60",
+   "hot_plate_temp_initial_layer" : "60",
+   "inherits" : "Spectrum PLA PRO @PG",
+   "is_custom_defined" : "1",
+   "name" : "Spectrum PLA PRO @Bbox",
+   "nozzle_temperature" : "210",
+   "nozzle_temperature_initial_layer" : "215",
+   "nozzle_temperature_range_high" : "215",
+   "nozzle_temperature_range_low" : "0",
+   "overhang_fan_speed" : "100",
+   "reduce_fan_stop_start_freq" : "1",
+   "slow_down_for_layer_cooling" : "1",
+   "slow_down_layer_time" : "8",
+   "slow_down_min_speed" : "15",
+   "textured_plate_temp" : "60",
+   "textured_plate_temp_initial_layer" : "60",
+   "version" : "1.6.0.0"
+}
