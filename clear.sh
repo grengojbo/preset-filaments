@@ -28,6 +28,12 @@ ORCASLICER_USER_DIR=2108695415
 # cp ${HOME}/.config/OrcaSlicer/user/default/filament/'Spectrum PLA PRO @Bbox.json' ./OrcaSlicer/
 
 if [ -d ${HOME}/Library/'Application Support'/OrcaSlicer/user/${ORCASLICER_USER_DIR}/filament ]; then
-	echo "[MacOS] Copy OrcaSlicer filament"
-	cp ${HOME}/Library/'Application Support'/OrcaSlicer/user/${ORCASLICER_USER_DIR}/filament/*.json ./OrcaSlicer/
+		echo "[MacOS] Clear profiles"
+		
+		rm -f ./OrcaSlicer/'Spectrum PLA Premium.json'
+		echo "Spectrum PLA Premium"
+		
+		rm -f ./OrcaSlicer/'Spectrum GreenyHT @Template.json'
+		echo "Spectrum GreenyHT @Template"
+
 fi

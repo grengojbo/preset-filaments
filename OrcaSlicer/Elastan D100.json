@@ -1,0 +1,16 @@
+{
+    "default_filament_colour": [
+        "#6666FF"
+    ],
+    "filament_settings_id": [
+        "Elastan D100"
+    ],
+    "filament_vendor": [
+        "MonoFilament"
+    ],
+    "from": "User",
+    "inherits": "Voron Generic TPU",
+    "is_custom_defined": "0",
+    "name": "Elastan D100",
+    "version": "1.6.5.2"
+}
